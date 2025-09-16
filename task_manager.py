@@ -49,7 +49,7 @@ class TaskManager:
         """Save tasks to JSON file"""
         try:
             data = {
-                "next_id": self.next_id,
+                "next_id": self.next_id, 
                 "tasks": [task.to_dict() for task in self.tasks]
             }
             with open(self.filename, 'w') as file:
@@ -137,6 +137,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
